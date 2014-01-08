@@ -1,8 +1,10 @@
 # Felis
+Felis is an API wrapper for [Emma's API](http://api.myemma.com/index.html)
+
+## Requirements
+[MyEmma](http://myemma.com/) account and API credentials (private & public key)
 
 ## Usage
-## MyEmma.com API Details
-http://api.myemma.com/index.html
 
 ## Instantiation
 ```ruby
