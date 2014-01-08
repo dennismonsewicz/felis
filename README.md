@@ -1,6 +1,8 @@
 # Felis
 Felis is an API wrapper for [Emma's API](http://api.myemma.com/index.html)
 
+[![Build Status](https://travis-ci.org/dennismonsewicz/felis.png?branch=master)](https://travis-ci.org/dennismonsewicz/felis)
+
 ## Requirements
 [MyEmma](http://myemma.com/) account and API credentials (private & public key)
 
