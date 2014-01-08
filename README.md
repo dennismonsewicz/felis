@@ -1,6 +1,9 @@
 # Felis
 
 ## Usage
+## MyEmma.com API Details
+http://api.myemma.com/index.html
+
 ## Instantiation
 ```ruby
 require 'felis'
