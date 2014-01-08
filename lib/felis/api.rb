@@ -69,6 +69,8 @@ module Felis
       end
       
       def setup_http_body(method, params)
+        @defaults.reject! { |k, v| [:query, :body].include? k }
+        
         unless params.empty?
           @defaults.merge!({query: params}).tap { |h| h.delete(:body) } if [:get, :delete].include? method.to_sym
           @defaults.merge!({body: MultiJson.dump(params)}).tap { |h| h.delete(:query) } if [:put, :post].include? method.to_sym
