@@ -17,7 +17,7 @@ You can also set environment variables and Felis will use them when you create a
 ENV['EMMA_ACCOUNT_ID'] = 'account_id'
 ENV['EMMA_PUBLIC_KEY'] = 'public_key'
 ENV['EMMA_PRIVATE_KEY'] = 'private_key'
-em = Felis::API.new
+felis = Felis::API.new
 ```
 
 ## GET Request
