@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://YOUR_PUBLIC_KEY:YOUR_PRIVATE_KEY@api.e2ma.net/YOUR_ACCOUNT_ID/members/email/test.me@test.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Jan 2014 20:56:52 GMT
+      Server:
+      - Apache/2.2.14 (Ubuntu)
+      X-Varnish:
+      - '1006640654'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Via:
+      - 1.1 varnish
+      Content-Length:
+      - '442'
+      Content-Type:
+      - application/json; charset=utf8
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"status\": \"active\", \n  \"confirmed_opt_in\": null, \n  \"account_id\":
+        \"YOUR_ACCOUNT_ID\", \n  \"fields\": {\n    \"first_name\": \"Tester\", \n    \"last_name\":
+        \"McTesterson\"\n  }, \n  \"member_id\": 485383562, \n  \"last_modified_at\":
+        \"@D:2014-01-07T14:56:52\", \n  \"member_status_id\": \"a\", \n  \"plaintext_preferred\":
+        false, \n  \"email_error\": null, \n  \"member_since\": \"@D:2014-01-07T12:53:35\",
+        \n  \"bounce_count\": 0, \n  \"deleted_at\": null, \n  \"email\": \"test.me@test.com\"\n}"
+    http_version: 
+  recorded_at: Tue, 07 Jan 2014 20:56:51 GMT
+recorded_with: VCR 2.8.0

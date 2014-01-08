@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://YOUR_PUBLIC_KEY:YOUR_PRIVATE_KEY@api.e2ma.net/YOUR_ACCOUNT_ID/members/add
+    body:
+      encoding: UTF-8
+      string: ! '{"fields":{"first_name":"Jane"}}'
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 07 Jan 2014 20:56:54 GMT
+      Server:
+      - Apache/2.2.14 (Ubuntu)
+      X-Varnish:
+      - '1006640756'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive, close
+      Via:
+      - 1.1 varnish
+      Content-Length:
+      - '62'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"error": "You must provide an email address for this member"}'
+    http_version: 
+  recorded_at: Tue, 07 Jan 2014 20:56:53 GMT
+recorded_with: VCR 2.8.0

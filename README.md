@@ -1,6 +1,47 @@
 # Felis
 
-TODO: Write a gem description
+## Usage
+## Instantiation
+```ruby
+require 'felis'
+felis = Felis::API.new(account_id: 'ACCOUNT_ID', public_key: 'PUBLIC_KEY', private_key: 'PRIVATE_KEY')
+```
+
+You can also set environment variables and Felis will use them when you create an instance
+```ruby
+ENV['EMMA_ACCOUNT_ID'] = 'account_id'
+ENV['EMMA_PUBLIC_KEY'] = 'public_key'
+ENV['EMMA_PRIVATE_KEY'] = 'private_key'
+em = Felis::API.new
+```
+
+## GET Request
+```ruby
+# Returns array of members
+request = felis.get '/members'
+puts request.inspect
+```
+
+## POST Request
+```ruby
+# Will return a reference object of the newly added member
+request = felis.post '/members/add', {"email" => "dennismonsewicz+h232e121lpme123@gmail.com", fields: {first_name: "Jack", last_name: "Jill"}}
+puts request.inspect
+```
+
+## PUT Request
+```ruby
+# Returns true on success
+request = felis.put '/members/123', { fields: { first_name: "Jane" } }
+puts request.inspect
+```
+
+## DELETE Request
+```ruby
+# Returns true on success
+request = felis.delete '/members/123'
+puts request.inspect
+```
 
 ## Installation
 
@@ -15,10 +56,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install felis
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 

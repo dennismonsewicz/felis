@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://YOUR_PUBLIC_KEY:YOUR_PRIVATE_KEY@api.e2ma.net/YOUR_ACCOUNT_ID/members/add
+    body:
+      encoding: UTF-8
+      string: ! '{"email":"test.me@test.com","fields":{"first_name":"Tester","last_name":"McTesterson"}}'
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Jan 2014 20:56:51 GMT
+      Server:
+      - Apache/2.2.14 (Ubuntu)
+      X-Varnish:
+      - '1006640612'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Via:
+      - 1.1 varnish
+      Content-Length:
+      - '65'
+      Content-Type:
+      - application/json; charset=utf8
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"status\": \"a\", \n  \"added\": false, \n  \"member_id\":
+        485383562\n}"
+    http_version: 
+  recorded_at: Tue, 07 Jan 2014 20:56:51 GMT
+recorded_with: VCR 2.8.0

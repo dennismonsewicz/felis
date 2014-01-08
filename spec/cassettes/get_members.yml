@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://YOUR_PUBLIC_KEY:YOUR_PRIVATE_KEY@api.e2ma.net/YOUR_ACCOUNT_ID/members
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Jan 2014 20:56:51 GMT
+      Server:
+      - Apache/2.2.14 (Ubuntu)
+      X-Varnish:
+      - '1006640557'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Via:
+      - 1.1 varnish
+      Content-Length:
+      - '5'
+      Content-Type:
+      - application/json; charset=utf8
+    body:
+      encoding: US-ASCII
+      string: ! '[
+
+
+        ]
+
+'
+    http_version: 
+  recorded_at: Tue, 07 Jan 2014 20:56:50 GMT
+recorded_with: VCR 2.8.0
