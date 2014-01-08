@@ -25,7 +25,7 @@ puts request.inspect
 ## POST Request
 ```ruby
 # Will return a reference object of the newly added member
-request = felis.post '/members/add', {"email" => "dennismonsewicz+h232e121lpme123@gmail.com", fields: {first_name: "Jack", last_name: "Jill"}}
+request = felis.post '/members/add', {"email" => "test@example.com", fields: {first_name: "Jack", last_name: "Jill"}}
 puts request.inspect
 ```
 
