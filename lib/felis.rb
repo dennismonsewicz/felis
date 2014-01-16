@@ -6,5 +6,4 @@ require 'felis/emma_error'
 require 'felis/api'
 
 module Felis
-  # Your code goes here...
 end
